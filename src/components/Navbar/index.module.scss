@@ -1,0 +1,19 @@
+nav {
+  .nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .icon_container {
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .logo {
+      img {
+      }
+    }
+  }
+}

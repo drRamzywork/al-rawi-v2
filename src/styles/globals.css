@@ -1,11 +1,22 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --gr-color: linear-gradient(
+    192.12deg,
+    rgba(3, 87, 70, 0.39) 0.73%,
+    rgba(3, 87, 70, 0.39) 54.59%,
+    rgba(210, 89, 42, 0.39) 99.99%
+  );
+
+  --main-green: rgba(3, 87, 70, 1);
+  --main-red: #e95345;
+  --main-white: #ffffff;
+  --main-yellow: #f49d41;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: var(--main-green);
     --foreground: #ededed;
   }
 }
@@ -14,6 +25,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background-color: var(--main-green) !important;
 }
 
 body {
