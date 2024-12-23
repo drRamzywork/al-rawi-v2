@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.scss";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Cities from "@/components/cities";
+import Footer from "@/components/Footer";
 
 
 
@@ -65,6 +66,7 @@ export default function Home() {
             <div className={styles.homeContent}>
               <Navbar />
               <Hero />
+
               <Cities />
 
               <div className={styles.layer_bg}>
@@ -79,14 +81,17 @@ export default function Home() {
             </div>
           )}
 
-          <div className={styles.shape_container2}>
+          {/* <div className={styles.shape_container2}>
             <Image
               src="/assets/svgs/shape.svg"
               alt="Vercel logomark"
               width={100}
               height={100}
             />
-          </div>
+          </div> */}
+
+
+          <Footer />
         </main>
       </div >
     </>

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { IoLocationOutline } from "react-icons/io5";
 import styles from './index.module.scss'
+import styles2 from '@/styles/Home.module.scss'
 import homeStyles from '@/styles/Home.module.scss'
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -22,13 +23,14 @@ const Cities = () => {
             height={100}
           />
         </div>
-        <div className="container">
-          <div className={styles.sec_container}>
-            <div className={styles.sec_title}>
-              <h3>أهم المدن التراثية</h3>
+        <div className={styles.sec_container}>
+          <div className={styles.sec_title}>
+            <h3>أهم المدن التراثية</h3>
 
-            </div>
+          </div>
 
+
+          <div className="container">
             <div className={styles.boxes_container}>
               <div className={styles.box}>
                 <div className={styles.img_container}>
@@ -100,18 +102,24 @@ const Cities = () => {
                 </div>
               </div>
             </div>
-
-
-
-            <div className={styles.sec_title}>
-              <h3>أشهر المعالم الأثرية</h3>
-
-
-
-            </div>
-
-
           </div>
+
+
+          <div className={styles.sec_title}>
+            <h3>أشهر المعالم الأثرية</h3>
+
+
+            <div className={styles.shape_container}>
+              <Image
+                src="/assets/svgs/shape.svg"
+                alt="Vercel logomark"
+                width={100}
+                height={100}
+              />
+            </div>
+          </div>
+
+
         </div>
 
 
