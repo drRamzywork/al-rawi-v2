@@ -60,4 +60,21 @@ section.hero {
       }
     }
   }
+
+  overflow: hidden;
+
+  .location {
+    display: flex;
+    background-color: red;
+    position: absolute;
+    bottom: 29px;
+    right: 0;
+    width: 100%;
+
+    svg {
+    }
+    p {
+      margin: 0;
+    }
+  }
 }

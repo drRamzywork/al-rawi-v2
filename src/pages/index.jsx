@@ -64,7 +64,7 @@ export default function Home() {
           ) : (
             // Home Page Content
             <div className={styles.homeContent}>
-              <Navbar />
+              <Navbar isHome={true} />
               <Hero />
 
               <Cities />

@@ -10,11 +10,12 @@ import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, FreeMode } from 'swiper/modules';
 import { IoIosArrowBack } from "react-icons/io";
+import Link from 'next/link';
 
 const Cities = () => {
   return (
     <>
-      <section className={styles.cities}>
+      <section id='cities' className={styles.cities}>
         <div className={homeStyles.shape_container3}>
           <Image
             src="/assets/svgs/shape.svg"
@@ -32,7 +33,7 @@ const Cities = () => {
 
           <div className="container">
             <div className={styles.boxes_container}>
-              <div className={styles.box}>
+              <Link href={'/cities/1'} className={styles.box}>
                 <div className={styles.img_container}>
                   <Image
                     src="/assets/imgs/bg1.png"
@@ -49,8 +50,8 @@ const Cities = () => {
                   </h6>
                   <IoLocationOutline />
                 </div>
-              </div>
-              <div className={styles.box}>
+              </Link>
+              <Link href={'/cities/1'} className={styles.box}>
                 <div className={styles.img_container}>
                   <Image
                     src="/assets/imgs/bg1.png"
@@ -66,8 +67,8 @@ const Cities = () => {
                   </h6>
                   <IoLocationOutline />
                 </div>
-              </div>
-              <div className={styles.box}>
+              </Link>
+              <Link href={'/cities/1'} className={styles.box}>
                 <div className={styles.img_container}>
                   <Image
                     src="/assets/imgs/bg1.png"
@@ -83,8 +84,8 @@ const Cities = () => {
                   </h6>
                   <IoLocationOutline />
                 </div>
-              </div>
-              <div className={styles.box}>
+              </Link>
+              <Link href={'/cities/1'} className={styles.box}>
                 <div className={styles.img_container}>
                   <Image
                     src="/assets/imgs/bg1.png"
@@ -100,7 +101,7 @@ const Cities = () => {
                   </h6>
                   <IoLocationOutline />
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
 

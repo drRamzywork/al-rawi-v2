@@ -9,6 +9,19 @@ nav {
         width: 24px;
         height: 24px;
       }
+
+      .back_btn {
+        background-color: #f7f7f9;
+        border-radius: 16px;
+        width: 37.51px;
+        height: 37.51px;
+        display: flex;
+
+        svg {
+          margin: auto;
+          color: #6f6f6f;
+        }
+      }
     }
 
     .logo {

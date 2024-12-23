@@ -112,7 +112,7 @@
       object-fit: contain;
     }
   }
-
+  .homeContent2,
   .homeContent {
     width: 100%;
     position: relative;
@@ -144,6 +144,19 @@
         height: 100%;
         position: relative;
         // z-index: -1;
+      }
+    }
+  }
+
+  .homeContent2 {
+    .layer_bg {
+      border-bottom-left-radius: 115.14px;
+      overflow: hidden;
+      .layer {
+        border-bottom-left-radius: 115.14px;
+      }
+      img {
+        border-bottom-left-radius: 115.14px;
       }
     }
   }
