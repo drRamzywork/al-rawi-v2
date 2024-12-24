@@ -3,6 +3,7 @@ import styles from './index.module.scss';
 import Image from 'next/image';
 import { IoIosArrowDown } from "react-icons/io";
 import Link from 'next/link';
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -10,17 +11,27 @@ const Hero = () => {
       <div className="container">
         <div className={styles.sec_container}>
           <div className={styles.title}>
-            <h1>استكشف عالم <br /> الجمال  في المملكة</h1>
-            <div className={styles.shape}>
+            <motion.h1
+              initial={{ opacity: 0, translateY: 50 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 0.7, type: "tween" }}>استكشف عالم <br /> الجمال  في المملكة</motion.h1>
+
+            <motion.div
+              initial={{ opacity: 0, translateY: -50 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 0.7, type: "tween" }} className={styles.shape}>
               <Image
                 src="/assets/svgs/text_shape.svg"
                 alt="Vercel logomark"
                 width={100}
                 height={100}
               />
-            </div>
+            </motion.div>
           </div>
-          <div className={styles.btn_container}>
+          <motion.div
+            initial={{ opacity: 0, translateY: -50 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.7, type: "tween" }} className={styles.btn_container}>
             <Link href={'#cities'}>
               <p>تعرف الآن</p>
               <div className={styles.icon_container}>
@@ -28,7 +39,7 @@ const Hero = () => {
               </div>
 
             </Link>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

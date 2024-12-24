@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './index.module.scss'
+import Image from 'next/image'
 const Footer = () => {
   return (
     <footer id='footer' className={styles.footer}>
@@ -8,7 +9,20 @@ const Footer = () => {
 
         <p>جميع الحقوق محفوظة ٢٠٢٥ ©
         </p>
+
+        <div className={styles.shape_container}>
+          <Image
+            src="/assets/svgs/shape.svg"
+            alt="Vercel logomark"
+            width={100}
+            height={100}
+          />
+        </div>
       </div>
+
+
+
+
     </footer>
   )
 }

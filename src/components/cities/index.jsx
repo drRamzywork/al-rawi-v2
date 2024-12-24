@@ -2,7 +2,6 @@ import Image from 'next/image'
 import React from 'react'
 import { IoLocationOutline } from "react-icons/io5";
 import styles from './index.module.scss'
-import styles2 from '@/styles/Home.module.scss'
 import homeStyles from '@/styles/Home.module.scss'
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -11,6 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, FreeMode } from 'swiper/modules';
 import { IoIosArrowBack } from "react-icons/io";
 import Link from 'next/link';
+import { motion } from "framer-motion";
 
 const Cities = () => {
   return (
@@ -25,15 +25,20 @@ const Cities = () => {
           />
         </div>
         <div className={styles.sec_container}>
-          <div className={styles.sec_title}>
+          <motion.div
+            initial={{ opacity: 0, translateY: -10 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.7, type: "tween" }} className={styles.sec_title}>
             <h3>أهم المدن التراثية</h3>
 
-          </div>
+          </motion.div>
 
 
           <div className="container">
             <div className={styles.boxes_container}>
-              <Link href={'/cities/1'} className={styles.box}>
+              <motion.a initial={{ opacity: 0, translateY: -10 }}
+                whileInView={{ opacity: 1, translateY: 0 }}
+                transition={{ duration: 0.7, type: "tween" }} href={'/cities/1'} className={styles.box}>
                 <div className={styles.img_container}>
                   <Image
                     src="/assets/imgs/bg1.png"
@@ -50,8 +55,11 @@ const Cities = () => {
                   </h6>
                   <IoLocationOutline />
                 </div>
-              </Link>
-              <Link href={'/cities/1'} className={styles.box}>
+              </motion.a>
+
+              <motion.a initial={{ opacity: 0, translateY: -10 }}
+                whileInView={{ opacity: 1, translateY: 0 }}
+                transition={{ duration: 0.7, type: "tween" }} href={'/cities/1'} className={styles.box}>
                 <div className={styles.img_container}>
                   <Image
                     src="/assets/imgs/bg1.png"
@@ -67,8 +75,11 @@ const Cities = () => {
                   </h6>
                   <IoLocationOutline />
                 </div>
-              </Link>
-              <Link href={'/cities/1'} className={styles.box}>
+              </motion.a>
+
+              <motion.a initial={{ opacity: 0, translateY: -10 }}
+                whileInView={{ opacity: 1, translateY: 0 }}
+                transition={{ duration: 0.7, type: "tween" }} href={'/cities/1'} className={styles.box}>
                 <div className={styles.img_container}>
                   <Image
                     src="/assets/imgs/bg1.png"
@@ -84,8 +95,11 @@ const Cities = () => {
                   </h6>
                   <IoLocationOutline />
                 </div>
-              </Link>
-              <Link href={'/cities/1'} className={styles.box}>
+              </motion.a>
+
+              <motion.a initial={{ opacity: 0, translateY: -10 }}
+                whileInView={{ opacity: 1, translateY: 0 }}
+                transition={{ duration: 0.7, type: "tween" }} href={'/cities/1'} className={styles.box}>
                 <div className={styles.img_container}>
                   <Image
                     src="/assets/imgs/bg1.png"
@@ -101,12 +115,14 @@ const Cities = () => {
                   </h6>
                   <IoLocationOutline />
                 </div>
-              </Link>
+              </motion.a>
             </div>
           </div>
 
 
-          <div className={styles.sec_title}>
+          <motion.div initial={{ opacity: 0, translateY: -10 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.7, type: "tween" }} className={styles.sec_title}>
             <h3>أشهر المعالم الأثرية</h3>
 
 
@@ -118,13 +134,15 @@ const Cities = () => {
                 height={100}
               />
             </div>
-          </div>
+          </motion.div>
 
 
         </div>
 
 
-        <div className={styles.swiper_container}>
+        <motion.div initial={{ opacity: 0, translateX: 40 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 0.7, type: "tween" }} className={styles.swiper_container}>
 
 
 
@@ -141,7 +159,9 @@ const Cities = () => {
 
           >
             <SwiperSlide>
-              <div className={styles.card}>
+              <motion.div initial={{ opacity: 0, }}
+                whileInView={{ opacity: 1, }}
+                transition={{ duration: 0.7, type: "tween" }} className={styles.card}>
                 <div className={styles.img_container}>
                   <div className={styles.card_top}>
                     <p>معالم</p>
@@ -176,11 +196,13 @@ const Cities = () => {
 
 
 
-              </div>
+              </motion.div>
 
             </SwiperSlide>
             <SwiperSlide>
-              <div className={styles.card}>
+              <motion.div initial={{ opacity: 0, }}
+                whileInView={{ opacity: 1, }}
+                transition={{ duration: 0.7, type: "tween" }} className={styles.card}>
                 <div className={styles.img_container}>
                   <div className={styles.card_top}>
                     <p>معالم</p>
@@ -215,11 +237,13 @@ const Cities = () => {
 
 
 
-              </div>
+              </motion.div>
 
             </SwiperSlide>
             <SwiperSlide>
-              <div className={styles.card}>
+              <motion.div initial={{ opacity: 0, }}
+                whileInView={{ opacity: 1, }}
+                transition={{ duration: 0.7, type: "tween" }} className={styles.card}>
                 <div className={styles.img_container}>
                   <div className={styles.card_top}>
                     <p>معالم</p>
@@ -254,14 +278,14 @@ const Cities = () => {
 
 
 
-              </div>
+              </motion.div>
 
             </SwiperSlide>
 
 
 
           </Swiper>
-        </div>
+        </motion.div>
       </section>
     </>
   )

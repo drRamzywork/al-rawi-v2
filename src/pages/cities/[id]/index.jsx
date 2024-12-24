@@ -7,6 +7,9 @@ import Navbar from '@/components/Navbar';
 import { IoLocationOutline } from "react-icons/io5";
 import Cards from '@/components/Cards'
 import Footer from '@/components/Footer'
+import { motion } from "framer-motion";
+
+
 
 const Cities = () => {
   return (
@@ -32,8 +35,11 @@ const Cities = () => {
                 <div className={styles.location}>
                   <IoLocationOutline />
 
-                  <p>المدينة المورة</p>
-                </div>
+                  <motion.p
+                    initial={{ opacity: 0, translateX: -50 }}
+                    whileInView={{ opacity: 1, translateX: 0 }}
+                    transition={{ duration: 0.7, type: "tween" }} >المدينة المورة</motion.p>
+                </div >
               </div>
 
             </div>

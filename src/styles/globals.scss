@@ -52,3 +52,17 @@ a {
     color-scheme: dark;
   }
 }
+
+#header {
+  .swiper-scrollbar-drag {
+    background: var(--main-red) !important;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .swiper-scrollbar {
+    left: 0 !important ;
+  }
+}

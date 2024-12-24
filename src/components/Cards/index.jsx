@@ -1,7 +1,9 @@
 import React from 'react'
 import { IoLocationOutline } from "react-icons/io5";
 import { IoChevronBackOutline } from "react-icons/io5";
-import styles from './index.module.scss'
+import styles from './index.module.scss';
+import { motion } from "framer-motion";
+
 const Cards = () => {
   return (
     <>
@@ -13,7 +15,10 @@ const Cards = () => {
             </div>
 
             <div className={styles.boxes_container}>
-              <div className={styles.box}>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.7, type: "tween" }} className={styles.box}>
                 <div className={styles.details}>
                   <div className={styles.img_container}>
                     <img src="/assets/imgs/bg4.png" alt="" />
@@ -42,8 +47,11 @@ const Cards = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className={styles.box}>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.7, type: "tween" }} className={styles.box}>
                 <div className={styles.details}>
                   <div className={styles.img_container}>
                     <img src="/assets/imgs/bg4.png" alt="" />
@@ -72,8 +80,11 @@ const Cards = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className={styles.box}>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.7, type: "tween" }} className={styles.box}>
                 <div className={styles.details}>
                   <div className={styles.img_container}>
                     <img src="/assets/imgs/bg4.png" alt="" />
@@ -102,8 +113,11 @@ const Cards = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className={styles.box}>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.7, type: "tween" }} className={styles.box}>
                 <div className={styles.details}>
                   <div className={styles.img_container}>
                     <img src="/assets/imgs/bg4.png" alt="" />
@@ -132,7 +146,7 @@ const Cards = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

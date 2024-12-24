@@ -31,7 +31,8 @@ export default function Home() {
 
       <div className={`${styles.page}  `}>
         <main className={styles.main}>
-          <div className={styles.shape_container}>
+          <div
+            className={styles.shape_container}>
             <Image
               src="/assets/svgs/shape.svg"
               alt="Vercel logomark"
