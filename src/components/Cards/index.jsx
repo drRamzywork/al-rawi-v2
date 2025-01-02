@@ -15,138 +15,148 @@ const Cards = () => {
             </div>
 
             <div className={styles.boxes_container}>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.7, type: "tween" }} className={styles.box}>
-                <div className={styles.details}>
-                  <div className={styles.img_container}>
-                    <img src="/assets/imgs/bg4.png" alt="" />
-                  </div>
 
-                  <div className={styles.text_container}>
-                    <h6>قصر عروة</h6>
+              <a href="/cities/2/video">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.7, type: "tween" }} className={styles.box}>
+                  <div className={styles.details}>
+                    <div className={styles.img_container}>
+                      <img src="/assets/imgs/bg4.png" alt="" />
+                    </div>
 
-                    <div className={styles.icon_container}>
-                      <IoLocationOutline />
-                      <p>يبعد عنك 13KM</p>
+                    <div className={styles.text_container}>
+                      <h6>قصر عروة</h6>
+
+                      <div className={styles.icon_container}>
+                        <IoLocationOutline />
+                        <p>يبعد عنك 13KM</p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div className={styles.links}>
-                  <div className={styles.card_top}>
-                    <p>معالم</p>
-                  </div>
+                  <div className={styles.links}>
+                    <div className={styles.card_top}>
+                      <p>معالم</p>
+                    </div>
 
-                  <div className={styles.card_bottom}>
-                    <p>استكشف</p>
+                    <div className={styles.card_bottom}>
+                      <p>استكشف</p>
 
-                    <div className={styles.icon_container}>
-                      <IoChevronBackOutline />
+                      <div className={styles.icon_container}>
+                        <IoChevronBackOutline />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.7, type: "tween" }} className={styles.box}>
-                <div className={styles.details}>
-                  <div className={styles.img_container}>
-                    <img src="/assets/imgs/bg4.png" alt="" />
-                  </div>
+                </motion.div>
+              </a>
+              <a href="/cities/2/video">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.7, type: "tween" }} className={styles.box}>
+                  <div className={styles.details}>
+                    <div className={styles.img_container}>
+                      <img src="/assets/imgs/bg4.png" alt="" />
+                    </div>
 
-                  <div className={styles.text_container}>
-                    <h6>قصر عروة</h6>
+                    <div className={styles.text_container}>
+                      <h6>قصر عروة</h6>
 
-                    <div className={styles.icon_container}>
-                      <IoLocationOutline />
-                      <p>يبعد عنك 13KM</p>
+                      <div className={styles.icon_container}>
+                        <IoLocationOutline />
+                        <p>يبعد عنك 13KM</p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div className={styles.links}>
-                  <div className={styles.card_top}>
-                    <p>معالم</p>
-                  </div>
+                  <div className={styles.links}>
+                    <div className={styles.card_top}>
+                      <p>معالم</p>
+                    </div>
 
-                  <div className={styles.card_bottom}>
-                    <p>استكشف</p>
+                    <div className={styles.card_bottom}>
+                      <p>استكشف</p>
 
-                    <div className={styles.icon_container}>
-                      <IoChevronBackOutline />
+                      <div className={styles.icon_container}>
+                        <IoChevronBackOutline />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.7, type: "tween" }} className={styles.box}>
-                <div className={styles.details}>
-                  <div className={styles.img_container}>
-                    <img src="/assets/imgs/bg4.png" alt="" />
-                  </div>
+                </motion.div>
+              </a>
+              <a href="/cities/2/video">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.7, type: "tween" }} className={styles.box}>
+                  <div className={styles.details}>
+                    <div className={styles.img_container}>
+                      <img src="/assets/imgs/bg4.png" alt="" />
+                    </div>
 
-                  <div className={styles.text_container}>
-                    <h6>قصر عروة</h6>
+                    <div className={styles.text_container}>
+                      <h6>قصر عروة</h6>
 
-                    <div className={styles.icon_container}>
-                      <IoLocationOutline />
-                      <p>يبعد عنك 13KM</p>
+                      <div className={styles.icon_container}>
+                        <IoLocationOutline />
+                        <p>يبعد عنك 13KM</p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div className={styles.links}>
-                  <div className={styles.card_top}>
-                    <p>معالم</p>
-                  </div>
+                  <div className={styles.links}>
+                    <div className={styles.card_top}>
+                      <p>معالم</p>
+                    </div>
 
-                  <div className={styles.card_bottom}>
-                    <p>استكشف</p>
+                    <div className={styles.card_bottom}>
+                      <p>استكشف</p>
 
-                    <div className={styles.icon_container}>
-                      <IoChevronBackOutline />
+                      <div className={styles.icon_container}>
+                        <IoChevronBackOutline />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.7, type: "tween" }} className={styles.box}>
-                <div className={styles.details}>
-                  <div className={styles.img_container}>
-                    <img src="/assets/imgs/bg4.png" alt="" />
-                  </div>
+                </motion.div>
+              </a>
+              <a href="/cities/2/video">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.7, type: "tween" }} className={styles.box}>
+                  <div className={styles.details}>
+                    <div className={styles.img_container}>
+                      <img src="/assets/imgs/bg4.png" alt="" />
+                    </div>
 
-                  <div className={styles.text_container}>
-                    <h6>قصر عروة</h6>
+                    <div className={styles.text_container}>
+                      <h6>قصر عروة</h6>
 
-                    <div className={styles.icon_container}>
-                      <IoLocationOutline />
-                      <p>يبعد عنك 13KM</p>
+                      <div className={styles.icon_container}>
+                        <IoLocationOutline />
+                        <p>يبعد عنك 13KM</p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div className={styles.links}>
-                  <div className={styles.card_top}>
-                    <p>معالم</p>
-                  </div>
+                  <div className={styles.links}>
+                    <div className={styles.card_top}>
+                      <p>معالم</p>
+                    </div>
 
-                  <div className={styles.card_bottom}>
-                    <p>استكشف</p>
+                    <div className={styles.card_bottom}>
+                      <p>استكشف</p>
 
-                    <div className={styles.icon_container}>
-                      <IoChevronBackOutline />
+                      <div className={styles.icon_container}>
+                        <IoChevronBackOutline />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </motion.div>
+                </motion.div>
+              </a>
+
             </div>
           </div>
         </div>

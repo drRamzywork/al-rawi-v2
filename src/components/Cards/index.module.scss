@@ -19,6 +19,10 @@ section.cards {
       justify-content: center;
       gap: 12px;
 
+      a {
+        color: unset;
+        text-decoration: none;
+      }
       .box {
         display: flex;
         align-items: flex-start;
