@@ -11,32 +11,16 @@ import Image from 'next/image';
 import { IoClose } from "react-icons/io5";
 
 const Menu2 = ({ showNewMenu, setShowNewMenu, }) => {
-  const [selected, setSelected] = useState(null);
   const controls = useAnimation();
-  const correctAnswerIndex = 1; // The correct answer is "المدينة المنورة"
 
   useEffect(() => {
     if (showNewMenu) {
       controls.start('visible');
     } else {
-      setSelected(null)
       controls.start('hidden');
     }
   }, [controls, showNewMenu]);
 
-  const handleClickAnswer = (index) => {
-    setSelected(index);
-  };
-
-  const checkmarkVariants = {
-    hidden: { pathLength: 0, opacity: 0 },
-    visible: { pathLength: 1, opacity: 1, transition: { duration: 0.5 } }
-  };
-
-  const crossVariants = {
-    hidden: { pathLength: 0, opacity: 0 },
-    visible: { pathLength: 1, opacity: 1, transition: { duration: 0.5 } }
-  };
 
 
 

@@ -71,13 +71,18 @@ const Questions = ({ questions,
         initial="hidden"
         animate={controls}
         className={styles.container}
-        transition={{ type: 'spring', damping: 40, stiffness: 400 }}
+        transition={{
+          type: 'spring',
+          damping: 40,
+          stiffness: 400,
+        }}
         variants={{
           visible: { y: '0%', opacity: 1 },
           hidden: { y: '-100%', opacity: 0 },
         }}
-        drag="y"
-        dragConstraints={{ top: 0, bottom: 0 }}
+
+        id="menu"
+        dir="rtl"
         style={{
           position: 'fixed',
           top: '10%',

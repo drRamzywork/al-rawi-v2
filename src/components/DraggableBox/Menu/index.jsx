@@ -62,16 +62,7 @@ const Menu = ({ setShowNewMenu, setIsMenu, setShowElements, setPause }) => {
     <>
       {/* Animated container */}
       <motion.div
-        initial="hidden"
-        animate={controls}
-        className={styles.container}
-        transition={{ type: 'spring', damping: 40, stiffness: 400 }}
-        variants={{
-          visible: { y: '0%', opacity: 1 },
-          hidden: { y: '-100%', opacity: 0 },
-        }}
-        drag="y"
-        dragConstraints={{ top: 0, bottom: 0 }}
+
         style={{
           position: 'fixed',
           top: '10%',
@@ -90,6 +81,22 @@ const Menu = ({ setShowNewMenu, setIsMenu, setShowElements, setPause }) => {
           background: '#00000080',
           padding: '14px'
         }}
+
+        initial="hidden"
+        animate={controls}
+        className={styles.container}
+        transition={{
+          type: 'spring',
+          damping: 40,
+          stiffness: 400,
+        }}
+        variants={{
+          visible: { y: '0%', opacity: 1 },
+          hidden: { y: '-100%', opacity: 0 },
+        }}
+
+        id="menu"
+        dir="rtl"
       >
         {readMore &&
           <div className={styles.content}>
@@ -146,8 +153,7 @@ const Menu = ({ setShowNewMenu, setIsMenu, setShowElements, setPause }) => {
       {readMore && (
         <div className={styles.layer} onClick={() => setReadMore(false)} />
       )}
-      <Questions questions={questions}
-        setQuestions={setQuestions} />
+
 
 
 
@@ -170,6 +176,10 @@ const Menu = ({ setShowNewMenu, setIsMenu, setShowElements, setPause }) => {
           </div>
         </div>
       </div >
+
+
+      <Questions questions={questions}
+        setQuestions={setQuestions} />
     </>
   );
 };
