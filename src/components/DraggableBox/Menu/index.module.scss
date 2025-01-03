@@ -106,9 +106,13 @@
 
 .nav_container {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 372px;
   background: #00000080;
   border-radius: 32px;
-  margin: 0 10px 50px;
+  margin: 0 0px 50px;
   border-bottom: 1px solid #f49d41;
 
   .sec_container {
